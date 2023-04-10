@@ -22,74 +22,38 @@ h2{
     text-align: center;
     margin: 20px;
     position: relative;
-    bottom: 13px;
-    left: 1px;
-    
+    bottom: 380px;
+    left: 10px;
+    height: 100px;
+    margin-top: 90px;
+    height: 100px;
+    max-height: -100px;
+    min-height: -1000px;
+
 }
 
 .container{
-    width: 700px;
-    height: 600px;
+    position: fixed;
+    width: 600px;
+    height: 400px;
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 2px 10px #000, 3px 6px 20px #000;
     padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-input{
-    width: 100%;
-    height: 46px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #ff0000;
-    color: #ff0000;
-    transition: .25s ease-in-out;
-}
-
-.input-field{
-    position: relative;
-    margin-bottom: 20px;
-}
-
-label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ff0000;
-    transform: translateY(18px);
-    transition: .25s ease-in-out;
-    font-weight: bold;
-}
-
-input:focus{
-    border-bottom: 1px solid #ff0000;
-    box-shadow: 0 1px 0 0 #ff0000;
-}
-input:focus + label{
-    transform: translateY(-14px) scale(.8);
-    color: rgb(255, 0, 0);
-    font-weight: bold;
-}
-
-input:not(:placeholder-shown) + label{
-    transform: translateY(-14px) scale(.8);
-    color: #ff0000;
-    font-weight: bold;
-}
-
-input:not(:placeholder-shown){
-    border-bottom: 2px solid #ff0000;
-    box-shadow: 0 1px 0 0 #ff0000;
-}
-
-input::placeholder{
-    color: transparent;
-}
-
-button{
-    padding: 30px 70px;
-    margin: 20px;
+.button{
+    padding: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 230px;
+    height: 80px;
+    margin: 15px;
     background: transparent;
     border: 2px solid #ff0000;
     text-transform: uppercase;
@@ -97,24 +61,45 @@ button{
     cursor: pointer;
     transition: ease-in-out .25s;
     font-weight: bold;
-    position: absolute;
-    top: 60%;
-    left: 4%;
+    
 }
 
-button:hover{
+.button:hover{
     background: #ff0000;
     color: #ffffff;
 }
 
-.center{
-    text-align: center;
+//*.btn-cadastrar{
+    position: relative;
+    padding: 15px 50px;
+    margin: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    background: #ff0000;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+    font-weight: bold;
+}*//
+
+.btn-cadastrar:hover{
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #ff0000;
+
 }
+    
 
 .logo{
-    position: relative;
-    top: 20%;
-    left: 40%;
+    position: absolute;
+    top: -7%;
+    left: 33%;
     filter: drop-shadow(0px 0px 4px rgba(152, 20, 20, 0.9));
 }
 
@@ -122,3 +107,16 @@ button:hover{
     width: 230px;
 }
 
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 270px;
+    margin-bottom: 15px;
+    margin-top: 130px;
+    height: auto;
+    min-height: 60px;
+    max-height: 10px;
+}
